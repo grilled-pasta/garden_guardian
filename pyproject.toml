@@ -1,0 +1,16 @@
+# [tool.basedpyright]
+# typeCheckingMode = "standard"
+# reportOperatorIssue = "none"
+# reportUnknownVariableType = "none"
+
+[tool.mypy]
+strict = true
+
+[[tool.mypy.overrides]]
+module = "ft_different_errors"
+disable_error_code = [
+    "operator",
+    "call-overload",
+    "assignment"
+]
+
